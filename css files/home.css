@@ -1,0 +1,49 @@
+body {
+    background-color: #222831;
+}
+
+#intro {
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    color: gainsboro;
+}
+
+#intro h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+#intro h2 {
+    color: mediumturquoise;
+    margin: 10px 0;
+}
+
+#intro p {
+    margin-bottom: 20px;
+}
+
+#intro > * {
+    animation: slideUp 0.9s ease backwards;
+}
+
+#intro > *:nth-child(1) { animation-delay: 0.15s; }
+#intro > *:nth-child(2) { animation-delay: 0.35s; }
+#intro > *:nth-child(3) { animation-delay: 0.55s; }
+#intro > *:nth-child(4) { animation-delay: 0.75s; }
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    #intro h1 {
+        font-size: 36px;
+    }
+}

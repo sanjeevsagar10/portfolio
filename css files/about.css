@@ -1,0 +1,53 @@
+.about-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-container h1 {
+    color: mediumturquoise;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about-card {
+    background-color: #222831;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: left;
+    animation: slideUp 0.9s ease backwards;
+}
+
+.about-card h2 {
+    color: mediumturquoise;
+    margin-top: 20px;
+}
+
+.about-card p {
+    color: gainsboro;
+    line-height: 1.6;
+}
+
+.hobbies {
+    color: gainsboro;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies li {
+    margin-bottom: 10px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .about-card {
+        padding: 25px 20px;
+    }
+}

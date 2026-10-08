@@ -1,0 +1,56 @@
+body {
+    background-color: #222831;
+}
+
+.contact-page {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 25px auto 0;
+    animation: slideUp 0.9s ease backwards;
+    animation-delay: 0.35s;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    color: gainsboro;
+    font-weight: bold;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid mediumturquoise;
+    border-radius: 5px;
+    background-color: #222831;
+    color: gainsboro;
+}
+
+input::placeholder, textarea::placeholder {
+    color: darkgray;
+}
+
+button {
+    background-color: mediumturquoise;
+    color: #222831;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gainsboro;
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+body {
+    background-color: #222831;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+.skill {
+    background-color: #222831;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 0.9s ease backwards;
+}
+
+.skill:nth-child(1) { animation-delay: 0.35s; }
+.skill:nth-child(2) { animation-delay: 0.55s; }
+.skill:nth-child(3) { animation-delay: 0.75s; }
+.skill:nth-child(4) { animation-delay: 0.95s; }
+
+.skill h3 {
+    color: mediumturquoise;
+}
+
+.skill p {
+    color: gainsboro;
+}
+
+/* keep the skill cards light and easy to spot */
+.skill:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 380px) {
+    .skill {
+        width: 100%;
+    }
+}
